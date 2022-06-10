@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter clone </title>
+    <link rel="stylesheet" href="./css/Style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="left_sidebar">
+             <p class="brand"><img src="./svg/twitter.svg" alt="" class="imge_icon"></i>&#160; Twitter  </p>   
+            <ul class="icon">
+                <li class="heder" ><img src="./svg/home.svg" alt="" class="imge_icon">&#160;  Home  </li>
+                <li ><img src="./svg/explore.svg" alt="" class="imge_icon" > &#160;  Explore  </li>
+                <li><img src="./svg/notifications.svg" alt="" class="imge_icon">&#160;  Notifications  </li>
+                <li><img src="./svg/message.svg" alt="" class="imge_icon"> &#160; Message  </li>
+                <li><img src="./svg/bookmarks.svg" alt="" class="imge_icon"> &#160; Bookmarks  </li>
+                <li><img src="./svg/lists.svg" alt="" class="imge_icon">&#160;  Lists  </li>
+                <li><img src="./svg/profile.svg" alt="" class="imge_icon">&#160; Profile  </li>
+                <li><img src="./svg/more.svg" alt="" class="imge_icon">&#160;  More  </li>
+
+            </ul>
+         
+        </aside>
+         <section class="tweet_container">
+             <h1>Home </h1>
+             <hr>
+             <form>
+                 <textarea placeholder="Cretae new Tweet..." class="new_tweet"  rows="10" cols="70"></textarea>
+                 <input   type="button" value="Shere" class="button_shere" id="button" onclick="newElement()" >
+             </form>
+             <div id="tweetcontainer">
+              <div class="tweet" id='tweet0' >
+                <img class="tweet_logo" src="./svg/user.svg" />
+                <div class="tweet_main">
+                  <div class="tweet_header">
+                    <div class="tweet_name">
+                      mahmood haroon
+                    </div>
+                    <div class="tweet_slug">
+                      @mahmood_haroon
+                    </div>
+                    <div class="tweet_time">
+                      10:00
+                    </div>
+                  </div>
+                  <div class="content">
+                    Dear visitor Welcome to my first project<br> 
+                    I hope you like this simple project 
+                  </div>
+                   <br>
+                    <div class="tweet_icon">
+                        <img src="./svg/love.svg" alt=""  onclick="ChangeTweetColor(0)">
+                        <img src="./svg/retweet.svg" alt="">
+                        
+                    </div>
+                </div>
+              </div>
+          </div>
+
+         </section>
+
+        <aside class="right_sidebar">
+            <form>
+                
+                <img src="./image/icons8-search.svg" alt=""  class="search_icon"/> 
+                <input type="search" placeholder="Search Twitter" class="search" >
+            </form>
+            <div class="trends" >
+                <div class="trend_title">
+                    <p>Trends for you</p>
+                </div>
+                <div class="trend1">
+                    <p>Trending in Palestine</p>
+                    <h4>#Al-Aqsa Mosque</h4>
+                    <p>20396 Tweet</p>
+                </div>
+                <div class="trend1">
+                    <p>Trending in Palestine</p>
+                    <h4>#Nanatsu no Taizai</h4>
+                    <p>15390 Tweet</p>
+                </div>
+                <div class="trend1">
+                    <p>Trending</p>
+                    <h4>#Programming</h4>
+                    <p>10000 Tweet</p>
+                </div>
+                
+            </div>
+            <div class="who_to_follow">
+                <div class="who_to_follow_block">
+                  <div class="who_to_follow_heading">
+                    Who to follow
+                  </div>
+                </div>
+                <div class="who_to_follow_block">
+                  <img
+                    class="who_to_follow_author_logo"
+                    src="./image/m.jpg"
+                  />
+                  <div class="who_to_follow_content">
+                    <div>
+                      <div class="who_to_follow_author_name">
+                        Meliodes Sama
+                      </div>
+                      <div class="who_to_follow_author_slug">
+                        @meliodes_sama
+                      </div>
+                    </div>
+                    <div class="who_to_follow_button">
+                      Follow
+                    </div>
+                  </div>
+                </div>
+                <div class="who_to_follow_block">
+                  <img
+                    class="who_to_follow_author_logo"
+                    src="./image/e.jpg"
+                  />
+                  <div class="who_to_follow_content">
+                    <div>
+                      <div class="who_to_follow_author_name">
+                        Elizabeth 
+                      </div>
+                      <div class="who_to_follow_author_slug">
+                        @Elizabeth
+                      </div>
+                    </div>
+                    <div class="who_to_follow_button">
+                      Follow
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="who_to_follow_block">
+                  <img
+                    class="who_to_follow_author_logo"
+                    src="./image/b.jpg"
+                  />
+                  <div class="who_to_follow_content">
+                    <div>
+                      <div class="who_to_follow_author_name">
+                        Ban
+                      </div>
+                      <div class="who_to_follow_author_slug">
+                        @Ban
+                      </div>
+                    </div>
+                    <div class="who_to_follow_button">
+                      Follow
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </aside>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

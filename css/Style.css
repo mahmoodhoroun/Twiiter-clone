@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .layout{
+    display: flex;
+} 
+/* ********************   Start left aside *************************/
+
+.left_sidebar {
+    display: inline-block;
+    width: 20%;
+    height: 100vh;
+    border-left: 1px #ccc solid;
+    padding-left:  10px; ;
+    border-right:0.5px #ddd solid;
+
+}
+
+.left_sidebar .icon li{
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    margin: 30px 5px;
+    width: 150px;
+    align-items: center
+    
+}
+.left_sidebar .brand img{
+    width: 40px;
+    height: 40px;
+
+}
+.left_sidebar p{
+  display: flex;
+}
+
+.brand{
+    color: #1da0f2;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.left_sidebar .icon li:hover{
+    background: rgba(29, 161, 242, 0.1);
+    color: #1da0f2;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.left_sidebar .icon .heder{
+    color: #1da0f2;
+    font-size: 16px;
+}
+.imge_icon{
+    width: 20px;
+    height: 20px;
+
+}
+ /* ********************   End left aside *************************/
+
+ /* ********************* Start shaere box *******************/
+.tweet_container{
+    display: inline-block;
+    width: 55%;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-right:0.5px #ddd solid;
+    /* border-bottom: 0.5px #ddd solid; */
+
+    
+}
+form{
+    border-bottom: 1px #ddd solid;
+    padding-bottom: 10px;
+}
+
+.new_tweet{
+    resize: none;
+    outline: none;
+	width: 96%;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+  margin-top: 10px;
+  
+    
+}
+.button_shere{
+    background-color: #24a8fa;
+    width: 70px;
+    height: 30px;
+    border-radius: 50pc;
+    border: 1px #24a8fa solid;
+    position: relative;
+    left: 85%;
+    /* margin-top: -30px; */
+}
+/* ********************* Start shaere box *******************/
+
+/********************** Start Tweet ************************/
+
+.tweet {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    border-left: 1px solid #e6ecf0;
+    border-right: 1px solid #e6ecf0;
+    margin-bottom: 2px;
+    padding: 10px 15px;
+    /* height: 120px; */
+  }
+  
+  .tweet:hover {
+    /* background: rgba(0, 0, 0, 0.03); */
+    cursor: pointer;
+  }
+  
+  .tweet a {
+    color: #1b94e0;
+    text-decoration: none;
+  
+  }
+  
+  .tweet a:hover {
+    text-decoration: underline;
+  }
+  
+  .tweet_logo{
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+      
+  }
+  
+  .tweet_header {
+    display: flex;
+  }
+  
+  .tweet_name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+  }
+  
+  .tweet_slug {
+    color: #5b7083;
+    font-size: 15px;
+  }
+  
+  .tweet_time {
+    margin-left: 5px;
+    color: #657786;
+  }
+  
+  .content{
+      width: 400px;
+      word-wrap: break-word;
+  }
+  .tweet_icon img{
+    width: 20px;
+  }
+  .tweet_icon img:hover{
+    width: 25px;
+  }
+  
+  
+/***********************End Tweet ***************************/
+
+/******************* Start rigth aside *********************/
+.right_sidebar{
+    margin: 10px;
+}
+.search{
+    width: 255px;
+    height: 40px;
+    border-radius: 50pc;
+    margin-left: 10px;
+    padding-left: 28px;
+}
+.search_icon{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+.trends{
+    border-radius: 15px;
+    background: #f5f8fa;
+    margin-bottom: 15px;
+    width: 270px;
+    margin-top: 15px;
+}
+.trend_title{
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+    font-weight: 700;
+
+}
+.trend1{
+    border-bottom: 1px solid #e6ecf0;
+    padding: 10px 15px;
+    
+}
+.trend1:last-child{
+    border-bottom: none;
+
+}
+.trend1 p{
+    font-size: 14px;
+    color: rgb(82, 77, 77);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.trend1 h4{
+    font-weight: 700;
+}
+/* .suggestion{
+    background: #f5f8fa;
+    border-radius: 15px;
+    width: 250px;
+    margin-top: 30px;
+}
+.suggestion_title{
+    font-size: 19px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    margin-bottom: 10px;
+}
+.first_suggestion{
+    width: 390px;
+    height: 60px;
+    display: flex;
+}
+.suggestion_image{
+    width: 12%;
+}
+.suggestion_image img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+hr{
+    height: 0.2px;
+} */
+.who_to_follow {
+    background: #f5f8fa;
+    border-radius: 15px;
+    width: 270px;
+    margin-top: 30px;
+  }
+  
+  
+  .who_to_follow_block {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e6ecf0;
+  }
+  
+  .who_to_follow_block:last-child {
+    border-bottom: none;
+  }
+  
+  .who_to_follow_author_logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    margin-right: 10px;
+  }
+  
+  .who_to_follow_author_slug {
+    color: #657786;
+    font-size: 15px;
+  }
+  
+  .who_to_follow_author_name {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .who_to_follow_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .who_to_follow_heading {
+    font-size: 19px;
+    font-weight: bold;
+    color: #14171a;
+  }
+  
+  .who_to_follow_button {
+    border: 1px solid #1da0f2;
+    color: #1da0f2;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 5px;
+    min-width: 67px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .who_to_follow_button:hover {
+    background: rgba(29, 161, 242, 0.1);
+    cursor: pointer;
+  }
+
+  /********************Start rigth aside *******************/
+   
+  .coloerd{
+    background-color: #81a7ce;
+  }
