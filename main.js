@@ -4,7 +4,11 @@ var tweet_id = 1;
 
 function getVal() {
     val = document.querySelector('.new_tweet').value;
-return val
+    return val
+}
+function getVal1() {
+    val1 = document.querySelector('.usernamr_tweet').value;
+    return val1
 }
 function clearTextBox() {
     document.querySelector('.new_tweet').value = ''; 
@@ -35,15 +39,16 @@ function newElement() {
     var today = new Date();
     var time_now = today.getHours() + ":" + today.getMinutes()
     const tweetTxt = getVal() 
+    const tweetuser = getVal1() 
     const tweet =  `<div class="tweet" id="tweet${tweet_id}" >
     <img class="tweet_logo" src="./svg/user.svg" />
     <div class="tweet_main">
         <div class="tweet_header">
         <div class="tweet_name">
-            mahmood haroon
+            ${tweetuser}
         </div>
         <div class="tweet_slug">
-        @mahmood_haroon
+        @${tweetuser}
         </div>
         <div class="tweet_time">
             ${time_now}
