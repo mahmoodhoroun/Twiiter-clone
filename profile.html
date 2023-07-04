@@ -7,6 +7,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Twitter clone </title>
   <link rel="stylesheet" href="./css/Style.css">
+  <style>
+    .tweet_container .profile {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+
+    .profile_info {
+      text-align: right;
+      margin-top: -100px;
+      margin-right: 0px;
+    }
+
+    .profile_info img {
+      width: 210px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    .profile_info h2 {
+      margin: 10px 20px 0 0;
+      font-size: 24px;
+      color: #1da1f2;
+    }
+
+    .profile_info p {
+      margin: 10px 35px 0 0;
+    }
+
+    .profile_background {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .profile_background img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,7 +64,7 @@
         <li><a href="./explore.html"> <img src="./svg/explore.svg" alt="" class="imge_icon"> &#160; Explore </a></li>
         <li><a href="./notifications.html"><img src="./svg/notifications.svg" alt="" class="imge_icon">&#160;
             Notifications </a> </li>
-        <li><a href="./message.html"><img src="./svg/message.svg" alt="" class="imge_icon">
+        <li><a href="./message.html" onclick="addMessages()"><img src="./svg/message.svg" alt="" class="imge_icon">
             &#160; Message</a> </li>
         <li><a href="./profile.html"><img src="./svg/profile.svg" alt="" class="imge_icon">&#160; Profile </a> </li>
 
@@ -27,68 +72,19 @@
 
     </aside>
     <section class="tweet_container">
-      <h1>Home </h1>
-      <hr>
-      <form>
-        <input type="text" placeholder=" Username" class="username_tweet">
-        <textarea placeholder="Cretae new Tweet..." class="new_tweet" rows="10" cols="70"></textarea>
-        <input type="button" value="Shere" class="button_shere" id="button" onclick="addTweet()">
-      </form>
-      <div id="tweetcontainer">
-        <div class="tweet" id='tweet0'>
-          <img class="tweet_logo" src="./svg/user.svg" />
-          <div class="tweet_main">
-            <div class="tweet_header">
-              <div class="tweet_name">
-                AbdElrahman Swileh
-              </div>
-              <div class="tweet_slug">
-                @AbdElrahman_Swileh
-              </div>
-              <div class="tweet_time">
-                08:00
-              </div>
-            </div>
-            <div class="content">
-              Dear visitor Welcome to my first project<br>
-              I hope you like this simple project
-            </div>
-            <br>
-            <!-- onclick="alert(document.querySelector('.tweet_time').textContent)"  -->
-            <div class="tweet_icon">
-              <img src="./svg/love.svg" alt="" onclick="ChangeTweetColor(0)">
-              <img src="./svg/retweet.svg" alt="" onclick="retweet(0)">
-            </div>
-          </div>
+      <div class="profile">
+        <div class="profile_background">
+          <!-- Background image -->
+          <img src="./image/mahmoud.jpg" alt="Background Image">
         </div>
-
-        <div class="tweet" id='tweet1'>
-          <img class="tweet_logo" src="./svg/user.svg" />
-          <div class="tweet_main">
-            <div class="tweet_header">
-              <div class="tweet_name">
-                mahmood haroon
-              </div>
-              <div class="tweet_slug">
-                @mahmood_haroon
-              </div>
-              <div class="tweet_time">
-                10:00
-              </div>
-            </div>
-            <div class="content">
-              Dear visitor Welcome to my first project<br>
-              I hope you like this simple project
-            </div>
-            <br>
-            <!-- onclick="alert(document.querySelector('.tweet_time').textContent)"  -->
-            <div class="tweet_icon">
-              <img src="./svg/love.svg" alt="" onclick="ChangeTweetColor(1)">
-              <img src="./svg/retweet.svg" alt="" onclick="retweet(1)">
-            </div>
-          </div>
+        <div class="profile_info">
+          <!-- Profile picture -->
+          <img src="./image/abood.jpg" alt="Profile Picture">
+          <h2>Mahmoud & AbdElrahman</h2>
+          <p>@cyber_security</p>
         </div>
       </div>
+      <!-- Rest of the tweet_container section content -->
     </section>
 
     <aside class="right_sidebar">

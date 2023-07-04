@@ -5,89 +5,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twitter clone </title>
+  <title>Explore </title>
   <link rel="stylesheet" href="./css/Style.css">
+
 </head>
+<style>
+
+</style>
 
 <body>
   <div class="layout">
     <aside class="left_sidebar">
       <p class="brand"><img src="./svg/twitter.svg" alt="" class="imge_icon"></i>&#160; Twitter </p>
       <ul class="icon">
-        <li class="heder"><a href="./index.html"><img src="./svg/home.svg" alt="" class="imge_icon">&#160; Home </a>
+        <li class="heder"><a href="../index.html"><img src="./svg/home.svg" alt="" class="imge_icon">&#160; Home </a>
         </li>
         <li><a href="./explore.html"> <img src="./svg/explore.svg" alt="" class="imge_icon"> &#160; Explore </a></li>
         <li><a href="./notifications.html"><img src="./svg/notifications.svg" alt="" class="imge_icon">&#160;
-            Notifications </a> </li>
-        <li><a href="./message.html"><img src="./svg/message.svg" alt="" class="imge_icon">
-            &#160; Message</a> </li>
+            Notifications
+          </a> </li>
+        <li><a href="./message.html" onclick="addMessages()"><img src="./svg/message.svg" alt="" class="imge_icon"> &#160; Message</a> </li>
         <li><a href="./profile.html"><img src="./svg/profile.svg" alt="" class="imge_icon">&#160; Profile </a> </li>
 
       </ul>
 
     </aside>
     <section class="tweet_container">
-      <h1>Home </h1>
-      <hr>
-      <form>
-        <input type="text" placeholder=" Username" class="username_tweet">
-        <textarea placeholder="Cretae new Tweet..." class="new_tweet" rows="10" cols="70"></textarea>
-        <input type="button" value="Shere" class="button_shere" id="button" onclick="addTweet()">
-      </form>
-      <div id="tweetcontainer">
-        <div class="tweet" id='tweet0'>
-          <img class="tweet_logo" src="./svg/user.svg" />
-          <div class="tweet_main">
-            <div class="tweet_header">
-              <div class="tweet_name">
-                AbdElrahman Swileh
-              </div>
-              <div class="tweet_slug">
-                @AbdElrahman_Swileh
-              </div>
-              <div class="tweet_time">
-                08:00
-              </div>
-            </div>
-            <div class="content">
-              Dear visitor Welcome to my first project<br>
-              I hope you like this simple project
-            </div>
-            <br>
-            <!-- onclick="alert(document.querySelector('.tweet_time').textContent)"  -->
-            <div class="tweet_icon">
-              <img src="./svg/love.svg" alt="" onclick="ChangeTweetColor(0)">
-              <img src="./svg/retweet.svg" alt="" onclick="retweet(0)">
-            </div>
-          </div>
-        </div>
+     
+      <div class="messages">
+        
 
-        <div class="tweet" id='tweet1'>
-          <img class="tweet_logo" src="./svg/user.svg" />
-          <div class="tweet_main">
-            <div class="tweet_header">
-              <div class="tweet_name">
-                mahmood haroon
-              </div>
-              <div class="tweet_slug">
-                @mahmood_haroon
-              </div>
-              <div class="tweet_time">
-                10:00
-              </div>
-            </div>
-            <div class="content">
-              Dear visitor Welcome to my first project<br>
-              I hope you like this simple project
-            </div>
-            <br>
-            <!-- onclick="alert(document.querySelector('.tweet_time').textContent)"  -->
-            <div class="tweet_icon">
-              <img src="./svg/love.svg" alt="" onclick="ChangeTweetColor(1)">
-              <img src="./svg/retweet.svg" alt="" onclick="retweet(1)">
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -179,7 +126,6 @@
   </div>
   <script src="./main.js"></script>
   <script src="./dom.js"></script>
-
 </body>
 
 </html>
